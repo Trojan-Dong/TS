@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a33a13df-219d-4635-ba77-011591621250" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TS-ModuleOne/src/main/resources/application-ts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TS-ModuleTwo/src/main/java/com/trojan/two/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TS-ModuleTwo/src/main/java/com/trojan/two/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TS-ModuleTwo/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TS-ModuleTwo/src/main/resources/application-dev.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="15" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="23tj8Ei9fgdVSzlJloj0E131Tjh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\svn\TS\TS-ModuleTest\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OneApp">
+    <configuration name="OneApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trojan.test.one.OneApp" />
+      <module name="TS-ModuleTwo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trojan.test.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trojan.TSApp" />
+      <module name="TS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trojan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.trojan.TSApp" />
+      <module name="TS-ModuleOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trojan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trojan.TSApplication" />
+      <module name="TS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trojan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="TS-ModuleTwo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trojan.two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trojan.two.OneApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OneApp" />
+        <item itemvalue="Application.OneApp" />
+        <item itemvalue="Application.TSApp" />
+        <item itemvalue="Application.TSApp (1)" />
+        <item itemvalue="Application.TSApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\14761\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workspace\study\TS" />
+          <option name="myCopyRoot" value="D:\workspace\study\TS" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\workspace\study\TS" />
+          <option name="myCopyRoot" value="D:\workspace\study\TS" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a33a13df-219d-4635-ba77-011591621250" name="Default Changelist" comment="" />
+      <created>1642560116617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642560116617</updated>
+      <workItem from="1642560121564" duration="1661000" />
+      <workItem from="1642561799236" duration="5095000" />
+      <workItem from="1642646092408" duration="618000" />
+      <workItem from="1643027170799" duration="833000" />
+      <workItem from="1643028039286" duration="814000" />
+      <workItem from="1644845542297" duration="77000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="26" key="#Project_Structure" timestamp="1642578134189">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="26" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1642578134189" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642560817637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1642560817637" />
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1642576486216">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1642576486216" />
+    <state x="389" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1642561430835">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="292" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1642561430835" />
+    <state x="467" y="252" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1642561433373">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="467" y="252" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1642561433373" />
+    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1642575936416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="411" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1642575936416" />
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1642560414289">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1642560414289" />
+    <state width="552" height="463" key="DebuggerActiveHint" timestamp="1642575182887">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="552" height="463" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1642575182887" />
+    <state x="690" y="203" key="FileChooserDialogImpl" timestamp="1644845675367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="203" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1644845675367" />
+    <state width="1867" height="330" key="GridCell.Tab.0.bottom" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="164" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642577528965" />
+    <state width="1867" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.0.center" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="164" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1642577528965" />
+    <state width="1867" height="330" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.0.left" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="164" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1642577528965" />
+    <state width="1867" height="330" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.0.right" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="164" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1642577528965" />
+    <state width="1867" height="330" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.1.bottom" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642576855692" />
+    <state width="1867" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.1.center" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1642576855691" />
+    <state width="1867" height="330" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.1.left" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1642576855691" />
+    <state width="1867" height="330" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state width="1867" height="330" key="GridCell.Tab.1.right" timestamp="1643028862454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1642576855692" />
+    <state width="1867" height="330" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1643028862454" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1642576347493">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1642576347493" />
+    <state x="738" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643028123314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="352" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643028123314" />
+    <state x="237" y="103" width="892" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1642576132140">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="237" y="103" width="892" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1642576132140" />
+    <state x="115" y="95" key="new project wizard" timestamp="1642576290466">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="115" y="95" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1642576290466" />
+    <state x="363" y="56" key="spring file set editor" timestamp="1642572564260">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="56" key="spring file set editor/0.0.1366.728@0.0.1366.728" timestamp="1642572564260" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/trojan/TSApp.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TS$TSApp__1_.ic" NAME="TSApp (1) Coverage Results" MODIFIED="1642575392505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.trojan.*</FILTER>
+    </SUITE>
+  </component>
+</project>
