@@ -3,7 +3,10 @@ package zookeeper;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.framework.recipes.cache.NodeCache;
+import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
+import org.apache.zookeeper.CreateMode;
 
 public class ZookeeperMain {
 
@@ -12,13 +15,11 @@ public class ZookeeperMain {
 
     public static void main(String[] args) throws Exception {
         // Retry strategy. Retry 3 times, and will increase the sleep time between retries.
-        RetryPolicy retryPolicy = new ExponentialBackoffRetry(BASE_SLEEP_TIME, MAX_RETRIES);
-        CuratorFramework zkClient = CuratorFrameworkFactory.builder()
-                // the server to connect to (can be a server list)
-                .connectString("47.106.110.166:2181")
-                .retryPolicy(retryPolicy)
-                .build();
+        CuratorFramework zkClient = new ZookeeperClient().getClient();
         zkClient.start();
-        System.out.println(new String(zkClient.getData().forPath("/root"), "UTF-8"));
+        zkClient.create().creatingParentsIfNeeded().withMode(CreateMode.EPHEMERAL).forPath("/root/node1/node2","123".getBytes());
+//        zkClient.setData().forPath("/root/node1", "change".getBytes());
+//        zkClient.create().creatingParentContainersIfNeeded().withMode(CreateMode.EPHEMERAL)
+//        System.out.println(new String(zkClient.getData().forPath("/root"), "UTF-8"));
     }
 }
