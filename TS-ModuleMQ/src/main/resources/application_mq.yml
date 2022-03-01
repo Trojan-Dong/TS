@@ -1,0 +1,18 @@
+rabbitmq:
+  host: 47.106.110.166
+  port: 5672
+  username: trojan
+  password: 1476154535@qwer
+  virtual-host: /
+  #开启手动确认是否消息消费成功
+  listener:
+    simple:
+      acknowledge-mode: manual
+      prefetch: 100
+
+#Redis的配置
+redis:
+  database: 0
+  password: 1476154535
+  host: 47.106.110.166
+  port: 6378
