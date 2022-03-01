@@ -1,3 +1,5 @@
+server:
+  port: 8085
 rabbitmq:
   host: 47.106.110.166
   port: 5672
