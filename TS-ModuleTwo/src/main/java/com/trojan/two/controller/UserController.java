@@ -4,19 +4,14 @@ import com.trojan.one.entity.RespBean;
 import com.trojan.one.entity.User;
 import com.trojan.two.service.UserService;
 import com.trojan.two.test.event.DemoEventOne;
-import org.apache.naming.factory.BeanFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionDefinition;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 

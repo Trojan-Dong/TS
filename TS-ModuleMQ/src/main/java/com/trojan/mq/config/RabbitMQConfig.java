@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
     public static final Logger
-            LOGGER = LoggerFactory.getLogger(RabbitMQConfig.class);
+            logger = LoggerFactory.getLogger(RabbitMQConfig.class);
 
     @Autowired
     CachingConnectionFactory cachingConnectionFactory;
@@ -28,17 +28,18 @@ public class RabbitMQConfig {
         rabbitTemplate.setConfirmCallback((data, ack, cause) -> {
             String msgId = data.getId();
             if (ack) {
-                LOGGER.info(msgId + "消息发送成功");
+                logger.info(msgId + "消息发送成功");
             } else {
-                LOGGER.error(msgId + "消息发送失败！");
+                logger.error(msgId + "消息发送失败！");
+                logger.error(msgId + cause);
             }
         });
         //消息投递到Queue队列失败的回调函数
         rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
             @Override
             public void returnedMessage(ReturnedMessage returned) {
-                LOGGER.error(returned.getMessage().getBody() + "----消息从交换机投递到队列失败！\n错误原因：" + returned.getReplyText());
-                LOGGER.error("发送错误的交换机：" + returned.getExchange() + ",发生错误的路由key：" + returned.getRoutingKey());
+                logger.error(returned.getMessage().getBody() + "----消息从交换机投递到队列失败！\n错误原因：" + returned.getReplyText());
+                logger.error("发送错误的交换机：" + returned.getExchange() + ",发生错误的路由key：" + returned.getRoutingKey());
             }
         });
         return rabbitTemplate;

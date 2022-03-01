@@ -1,16 +1,14 @@
 server:
   port: 8085
-rabbitmq:
-  host: 47.106.110.166
-  port: 5672
-  username: trojan
-  password: 1476154535@qwer
-  virtual-host: /
-  #开启手动确认是否消息消费成功
-  listener:
-    simple:
-      acknowledge-mode: manual
-      prefetch: 100
+spring:
+  rabbitmq:
+    host: 47.106.110.166
+    port: 5672
+    username: trojan
+    password: 1476154535@qwer
+    virtual-host: /
+    publisher-confirms: true  # 消息发送到交换机确认机制，是否确认回调
+    publisher-returns: true
 
 #Redis的配置
 redis:
