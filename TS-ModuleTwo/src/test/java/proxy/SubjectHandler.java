@@ -4,6 +4,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * JDK动态代理类  只能代理实现了接口的类
+ */
 public class SubjectHandler implements InvocationHandler {
     private Object obj;
 

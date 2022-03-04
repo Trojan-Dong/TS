@@ -7,9 +7,7 @@ spring:
     username: trojan
     password: 1476154535@qwer
     virtual-host: /
-    publisher-confirms: true  # 消息发送到交换机确认机制，是否确认回调
     publisher-returns: true
-
 #Redis的配置
 redis:
   database: 0

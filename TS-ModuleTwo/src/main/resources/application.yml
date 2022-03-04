@@ -5,6 +5,17 @@ spring:
     url: jdbc:mysql://localhost/subtlechat?characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 1476154535@qwer
+  rabbitmq:
+    host: 47.106.110.166
+    port: 5672
+    username: trojan
+    password: 1476154535@qwer
+    virtual-host: /
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 100
 #mapper文件位置配置
 mybatis:
   configuration:

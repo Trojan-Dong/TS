@@ -1,5 +1,8 @@
 package proxy;
 
+/**
+ * 目标对象所实现的接口
+ */
 public interface Subject {
     public void printOne();
 
