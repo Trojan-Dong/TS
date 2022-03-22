@@ -6,6 +6,8 @@ public class StringAppendTest implements Comparable<StringAppendTest> {
     private int number;
 
     public static void main(String[] args) {
+        //string的+拼接实际是调用了StringBuilder的append方法
+        //每次新建一个StringBuilder 对象
         String a = "123";
         a += 123;
         a += "321";
