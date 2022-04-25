@@ -1,5 +1,6 @@
 package thread;
 
+import java.util.*;
 import java.util.concurrent.*;
 
 public class TestThread {
@@ -22,8 +23,29 @@ public class TestThread {
         for (int i = 0; i < 10; i++) {
             Future future = executor.submit(new ThreadOne());
         }
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("The runable now is using!");
+            }
+        }).start();
+        new Thread(() -> System.out.println("The runable now is using!")).start();
 //        Future future = executor.submit(new ThreadOne());
+        Collections.sort(new ArrayList<Integer>(),new Comparator<Integer>(){
 
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return 0;
+            }
+        });
+        List<String> list =new ArrayList();
+        list.sort(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return 0;
+            }
+        });
+        Collections.sort(new ArrayList<Integer>(), (Integer o1, Integer o2) -> o1-o2);
         executor.shutdown();
         while (!executor.isTerminated()) {
         }
