@@ -22,21 +22,26 @@ public class HttpServer {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.err.println(
-                    "Usage: " + HttpServer.class.getSimpleName() +
-                            " <port>");
-            return;
+        int port = 4434;
+        if (args.length == 0) {
+        } else {
+            if (args.length != 1) {
+                System.err.println(
+                        "Usage: " + HttpServer.class.getSimpleName() +
+                                " <port>");
+                return;
+            }
+            port = Integer.parseInt(args[0]);
         }
-        int port = Integer.parseInt(args[0]);
+
         new HttpServer(port).start();
     }
 
     /**
-     *
      * @throws Exception
      */
     public void start() throws Exception {
+        System.out.println("httpserver start");
         ServerBootstrap b = new ServerBootstrap();
         NioEventLoopGroup group = new NioEventLoopGroup();
         b.group(group)

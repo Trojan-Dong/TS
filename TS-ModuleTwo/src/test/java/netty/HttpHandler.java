@@ -25,15 +25,13 @@ public class HttpHandler extends SimpleChannelInboundHandler<FullHttpRequest> { 
         DefaultFullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,
                 HttpResponseStatus.OK,
                 Unpooled.wrappedBuffer("test".getBytes())); // 2
-
         HttpHeaders heads = response.headers();
         heads.add(HttpHeaderNames.CONTENT_TYPE, contentType + "; charset=UTF-8");
         heads.add(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes()); // 3
         heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
-
         ctx.write(response);
     }
-
+//https://www.jianshu.com/p/b9f3f6a16911
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         System.out.println("channelReadComplete");
