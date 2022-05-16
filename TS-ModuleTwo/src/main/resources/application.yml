@@ -16,6 +16,11 @@ spring:
       simple:
         acknowledge-mode: manual
         prefetch: 100
+  elasticsearch:
+    rest:
+      uris: http://127.0.0.1:9300
+      username: elastic
+      password: rbJ-rq5LlXqHM4dmNj=0
 #mapper文件位置配置
 mybatis:
   configuration:
@@ -24,3 +29,8 @@ mybatis:
 logging:
   level:
     com.trojan.two.dao: debug
+elasticsearch:
+  hostname: 127.0.0.1
+  port: 9300
+  pool: 10
+  cluster-name: elasticsearch
