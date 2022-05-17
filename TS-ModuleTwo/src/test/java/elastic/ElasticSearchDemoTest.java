@@ -21,6 +21,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.text.Text;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.TermQueryBuilder;
 import org.elasticsearch.search.SearchHit;
@@ -70,9 +71,13 @@ public class ElasticSearchDemoTest {
          * ElasticSearchConfig.COMMON_OPTIONS:从配置类中获取请求项,默认为RequestOptions.DEFAULT
          */
         //执行操作
-        IndexResponse index = client.index(indexRequest, ElasticSearchConfig.COMMON_OPTIONS);
-        //提取响应数据
-        System.out.println(index);
+        try {
+            IndexResponse index = client.index(indexRequest, ElasticSearchConfig.COMMON_OPTIONS);
+            //提取响应数据
+            System.out.println(index);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     /**
@@ -142,17 +147,22 @@ public class ElasticSearchDemoTest {
      */
     @Test
     public void testFuzzyQuery() throws IOException {
-        SearchRequest searchRequest = new SearchRequest("wlp-index");
+        SearchRequest searchRequest = new SearchRequest("k*");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-        searchSourceBuilder.query(QueryBuilders.matchQuery("about", "人之初"));
+        searchSourceBuilder.query(QueryBuilders.matchQuery("OriginWeather", "Sunny"));
         //超时时间
         searchSourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));
         searchRequest.source(searchSourceBuilder);
-        SearchResponse response = client.search(searchRequest, ElasticSearchConfig.COMMON_OPTIONS);
-        SearchHit[] hits = response.getHits().getHits();
-        Arrays.stream(hits).forEach(documentFields -> {
-            System.out.println(documentFields.getSourceAsMap());
-        });
+        try {
+            SearchResponse response = client.search(searchRequest, ElasticSearchConfig.COMMON_OPTIONS);
+            SearchHit[] hits = response.getHits().getHits();
+            Arrays.stream(hits).forEach(documentFields -> {
+                System.out.println(documentFields.getSourceAsMap());
+            });
+        } catch (Exception e) {
+
+        }
+
     }
 
     /**
