@@ -11,7 +11,6 @@ public class OneApp {
 //        ApplicationContext context=new ClassPathXmlApplicationContext("classpath:one.xml");
 //        OneService oneService=context.getBean(OneService.class);
 //        oneService.printOne();
-//        SpringBootApplication
         SpringApplication.run(OneApp.class, args);
 //        context.getBean();
 
