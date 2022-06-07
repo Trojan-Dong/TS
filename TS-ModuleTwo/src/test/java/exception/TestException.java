@@ -1,13 +1,18 @@
 package exception;
 
-import org.junit.jupiter.api.Test;
-
 public class TestException {
     public void aTest() {
         int a = 1 / 0;
     }
 
     public static void main(String[] args) {
-        new TestException().aTest();
+        try {
+            new TestException().aTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+//            System.exit(1);
+        } finally {
+            System.out.println("finally");
+        }
     }
 }

@@ -61,9 +61,6 @@ public class ElasticSearchConfig {
                 }
             }).build();
             SSLIOSessionStrategy sessionStrategy = new SSLIOSessionStrategy(sslContext, NoopHostnameVerifier.INSTANCE);
-            Header[] myheaders = {
-                    new BasicHeader("Authorization", "Basic YWJkaV9hZG1pbjpBRkVEb3ZNclRSeGdjcUpjRW5GREJPcUxIYUdLVHRkOXM5d0Uxd3NpVnI5TVZDenc=")
-            };
             client = new RestHighLevelClient(
                     RestClient.builder(new HttpHost(hostName, port, "https")).setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
                         @Override

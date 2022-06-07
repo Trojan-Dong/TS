@@ -6,8 +6,10 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.util.Objects;
+
 @RestControllerAdvice
-public class GlobalExcetionHandler {
+public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public RespBean exceptionHandler(Exception e) {
         e.printStackTrace();
@@ -18,10 +20,10 @@ public class GlobalExcetionHandler {
         }
     }
 
-//    @ExceptionHandler(MethodArgumentNotValidException.class)
+    //    @ExceptionHandler(MethodArgumentNotValidException.class)
     public RespBean validationExceptionHandler(MethodArgumentNotValidException e) {
         BindingResult result = e.getBindingResult();
-        String message = result.getFieldError().getDefaultMessage();
+        String message = Objects.requireNonNull(result.getFieldError()).getDefaultMessage();
         return RespBean.error(message);
     }
 }

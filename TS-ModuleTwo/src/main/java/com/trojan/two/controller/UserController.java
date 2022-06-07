@@ -3,7 +3,6 @@ package com.trojan.two.controller;
 import com.trojan.one.entity.RespBean;
 import com.trojan.one.entity.User;
 import com.trojan.two.service.UserService;
-import com.trojan.two.test.event.DemoEventOne;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ public class UserController {
 
     @RequestMapping("test")
     public RespBean printInfo(@RequestBody @Valid User user) {
-        context.publishEvent(new DemoEventOne(this, "msg"));
+//        context.publishEvent(new DemoEventOne(this, "msg"));
 
 //        DataSourceTransactionManager transactionManager=new DataSourceTransactionManager();
 //        transactionManager.getTransaction(TransactionDefinition.PROPAGATION_REQUIRED );
