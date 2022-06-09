@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import rpc.entity.RpcRequest;
 import rpc.entity.RpcResponse;
+import rpc.kryo.KryoSerializer;
 import rpc.kryo.NettyKryoDecoder;
 import rpc.kryo.NettyKryoEncoder;
 
@@ -40,6 +41,7 @@ public class NettyClient {
     static {
         EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
         b = new Bootstrap();
+        KryoSerializer kryoSerializer = new KryoSerializer();
         b.group(eventLoopGroup)
                 .channel(NioSocketChannel.class)
                 // backlog 指定了内核为此套接口排队的最大连接个数；
@@ -51,8 +53,8 @@ public class NettyClient {
                 .handler(new ChannelInitializer<SocketChannel>() {//初始化时调用
                     @Override
                     protected void initChannel(SocketChannel ch) {
-                        ch.pipeline().addLast(new NettyKryoDecoder());//添加解码处理类
-                        ch.pipeline().addLast(new NettyKryoEncoder());//加密处理类
+                        ch.pipeline().addLast(new NettyKryoDecoder(kryoSerializer, RpcResponse.class));//添加解码处理类
+                        ch.pipeline().addLast(new NettyKryoEncoder(kryoSerializer, RpcRequest.class));//加密处理类
                         ch.pipeline().addLast(new NettyClientHandler());//业务处理
                     }
                 });
