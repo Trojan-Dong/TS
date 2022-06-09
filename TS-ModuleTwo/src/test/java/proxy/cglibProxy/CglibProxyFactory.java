@@ -1,11 +1,16 @@
-package proxy;
+package proxy.cglibProxy;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 
+/***
+ * @Author trojan
+ * @Date 2022/6/9 16:44
+ * @Description
+ * @Version 1.0
+ */
 public class CglibProxyFactory {
     /**
-     *
      * @param clazz
      * @return
      */

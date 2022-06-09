@@ -1,4 +1,4 @@
-package proxy;
+package proxy.jdkProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;

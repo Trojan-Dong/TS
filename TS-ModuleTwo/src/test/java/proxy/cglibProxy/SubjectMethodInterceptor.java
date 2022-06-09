@@ -1,10 +1,16 @@
-package proxy;
+package proxy.cglibProxy;
 
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
+/***
+ * @Author trojan
+ * @Date 2022/6/9 16:44
+ * @Description 拦截器
+ * @Version 1.0
+ */
 public class SubjectMethodInterceptor implements MethodInterceptor {
 
 
