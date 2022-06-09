@@ -10,7 +10,7 @@ import rpc.serializer.Serializer;
 import java.util.List;
 
 /**
- * 自定义解码器。
+ * 自定义解码器
  *
  * @author shuang.kou
  * @createTime 2020年05月25日 19:42:00

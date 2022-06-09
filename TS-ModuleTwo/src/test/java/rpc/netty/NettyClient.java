@@ -12,9 +12,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import rpc.entity.RpcRequest;
 import rpc.entity.RpcResponse;
-import rpc.kryo.KryoSerializer;
 import rpc.kryo.NettyKryoDecoder;
 import rpc.kryo.NettyKryoEncoder;
+import rpc.serializer.KryoSerializer;
 
 /***
  * @Author trojan
@@ -59,7 +59,6 @@ public class NettyClient {
                     }
                 });
     }
-
 
     public RpcResponse sendMessage(RpcRequest rpcRequest) throws InterruptedException {
         try {
