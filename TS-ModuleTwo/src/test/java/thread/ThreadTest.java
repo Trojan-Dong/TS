@@ -3,7 +3,7 @@ package thread;
 import java.util.*;
 import java.util.concurrent.*;
 
-public class TestThread {
+public class ThreadTest {
     private static final int CORE_POOL_SIZE = 5;
     private static final int MAX_POOL_SIZE = 10;
     private static final int QUEUE_CAPACITY = 100;
