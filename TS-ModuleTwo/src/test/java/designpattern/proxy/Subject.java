@@ -1,4 +1,4 @@
-package proxy;
+package designpattern.proxy;
 
 /**
  * 目标对象所实现的接口

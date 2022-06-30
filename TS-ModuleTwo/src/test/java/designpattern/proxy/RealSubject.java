@@ -1,4 +1,4 @@
-package proxy;
+package designpattern.proxy;
 
 /**
  * 真实被代理的目标对象 必须得实现接口才能被代理
