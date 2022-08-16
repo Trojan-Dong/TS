@@ -22,6 +22,7 @@ public class JavaGCTest {
         byte[] byte1m_1 = new byte[1 * 1024 * 1024];
         byte[] byte1m_2 = new byte[1 * 1024 * 1024];
         byte[] byte1m_3 = new byte[1 * 1024 * 1024];
+        byte[] byte1m_4 = new byte[1 * 1024 * 1024];
 
         //使用函数方式来申请空间，函数运行完毕以后，就会变成垃圾等待回收。此时应保证eden的区域占用达到100%。可以通过调整传入值来达到效果。
         makeGarbage(34);
@@ -36,7 +37,9 @@ public class JavaGCTest {
 
         //再次触发垃圾回收，证明三个1M的数组会因为其第二次回收后age为2，大于上一次计算出的new threshold 1，所以进入老年代。
         //而byteArr因为超过survivor的单个区域，直接进入了老年代。
-        makeGarbage(34);
+        makeGarbage(50);
+//        makeGarbage(100);
+        byte[] byteArr2 = new byte[1 * 1024 * 1024];
     }
 
     private static void makeGarbage(int size) {
