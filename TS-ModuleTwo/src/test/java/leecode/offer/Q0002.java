@@ -1,4 +1,4 @@
-package leecode;
+package leecode.offer;
 
 public class Q0002 {
 //public ListNode(){
