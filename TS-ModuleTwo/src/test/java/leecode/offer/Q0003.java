@@ -29,5 +29,24 @@ package leecode.offer;
  * s 由英文字母、数字、符号和空格组成
  */
 public class Q0003 {
-    
+    public static int getNoDumplicateSubStr(String str){
+        StringBuilder subStr=new StringBuilder();
+        int subLen=0;
+        for (int i=0;i<str.length();i++){
+            if (subStr.toString().contains(String.valueOf(str.charAt(i)))){
+                if (subStr.length()>subLen){
+                    System.out.println(subStr.toString());
+                    subLen=subStr.length();
+                    subStr=new StringBuilder();
+                }
+            }else{
+                subStr.append(str.charAt(i));
+            }
+        }
+        return subLen;
+    }
+    public static void main(String[] args) {
+        String str="pwwkew";
+        System.out.println(getNoDumplicateSubStr(str));
+    }
 }
