@@ -23,13 +23,13 @@ public class LiveDecoder extends ReplayingDecoder<LiveDecoder.LiveState> { //1
 
     @Override
     protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {
-        switch (state()) { // 4
+        switch (state()) {
             case LENGTH:
                 int length = byteBuf.readInt();
                 if (length > 0) {
-                    checkpoint(LiveState.CONTENT); // 5
+                    checkpoint(LiveState.CONTENT);
                 } else {
-                    list.add(message); // 6
+                    list.add(message);
                 }
                 break;
             case CONTENT:
