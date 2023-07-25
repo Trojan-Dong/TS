@@ -19,13 +19,14 @@ public interface ContractConvert {
     //            .getQuotaCode())"),
     //            @Mapping(target = "id",expression = "java(null)")
     //    })
-    @Mapping(target = "id", expression = "java(null)")
-    TargetObject convert(SourceObject quotaCode);
+    @Mapping(target = "id", ignore = true)
+    TargetObject convert(SourceObject sourceObject);
     
 //    @Mappings({
 //            @Mapping(target = "quotaCode", source = "quotaCode", defaultExpression = "java(mapstruct.Test.getQuotaCode())"),
 //            @Mapping(target = "id",expression ="java(mapstruct.Test.getId(id))" )
 //    })
+//    @Mapping(target = "id", ignore = true)
     List<TargetObject> convertList(List<SourceObject> list);
     
 }

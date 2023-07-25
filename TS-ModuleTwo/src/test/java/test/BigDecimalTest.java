@@ -1,6 +1,7 @@
 package test;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class BigDecimalTest {
     
@@ -13,16 +14,17 @@ public class BigDecimalTest {
     
     public static void main(String[] args) {
         BigDecimal a = new BigDecimal(10);
-        BigDecimal b = new BigDecimal(20);
+        BigDecimal b = new BigDecimal(20.455000);
         BigDecimal c = BigDecimal.ONE;
         //        System.out.println(a.subtract(b));
         //        System.out.println(a);
-        Test test = new Test();
-        TestB testB = new TestB();
-        testB.setA(a);
-        test.setA(testB.getA());
-        testB.setA(b);
-        System.out.println(test.getA());
-        System.out.println(testB.getA());
+      
+        System.out.println(b.setScale(2, RoundingMode.CEILING));
+        System.out.println(b.setScale(2, RoundingMode.DOWN));
+        System.out.println(b.setScale(2, RoundingMode.FLOOR));
+        System.out.println(b.setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(b.setScale(2, RoundingMode.HALF_DOWN));
+        System.out.println(b.setScale(2, RoundingMode.HALF_UP));
+    
     }
 }
