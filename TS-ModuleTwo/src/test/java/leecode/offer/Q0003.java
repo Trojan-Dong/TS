@@ -30,4 +30,28 @@ package leecode.offer;
  */
 public class Q0003 {
     
+    public static int getNoDumplicateSubStr(String s) {
+        StringBuilder subStr = new StringBuilder();
+        int subLen = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (subStr.toString().contains(String.valueOf(s.charAt(i)))) {
+                if (subStr.length() > subLen) {
+                    subLen = subStr.length();
+                }
+                String append=subStr.toString().substring(subStr.toString().indexOf(s.charAt(i)));
+                subStr = new StringBuilder()
+                        .append(append);
+            } else {
+                subStr.append(s.charAt(i));
+            }
+        }
+        if (subStr.length() > subLen) {
+            subLen = subStr.length();
+        }
+        return subLen;
+    }
+    public static void main(String[] args) {
+        String str = "aabaab!bb";
+        System.out.println(getNoDumplicateSubStr(str));
+    }
 }
