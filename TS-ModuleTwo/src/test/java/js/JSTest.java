@@ -23,11 +23,6 @@ public class JSTest {
     public static void main(String[] args) throws Exception {
         String userAccount = "202004010401";
         String pwd = "123";
-        //        String param = JSON.toJSONString(
-        //                LoginReq.builder().loginMethod("LoginToXk").userAccount(userAccount).userPassword(pwd)
-        //                        .encoded(encodeInp(userAccount, pwd)).build());
-        String param = String.format("loginMethod=LoginToXk&userAccount=%s&userPassword=%s&encoded=%s", userAccount,
-                pwd, encodeInp(userAccount, pwd));
         
         // 发送POST请求（Form表单）
         FormBody.Builder formBuilder = new FormBody.Builder().add("loginMethod", "LoginToXk")
