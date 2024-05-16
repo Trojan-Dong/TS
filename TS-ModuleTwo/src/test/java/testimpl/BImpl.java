@@ -6,7 +6,7 @@ public abstract class BImpl extends AImpl {
     
     @Override
     public void test() {
-//        System.out.println("B");
+        System.out.println("B");
     
     }
 }

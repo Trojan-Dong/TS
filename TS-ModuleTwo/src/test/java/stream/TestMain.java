@@ -1,5 +1,6 @@
 package stream;
 
+import exception.BusinessException;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.jni.Local;
 
@@ -29,8 +30,8 @@ public class TestMain {
     }
     
     public static void main(String[] args) {
-        System.out.println(Arrays.asList("EC_TRANSFER,POS_TRANSFER,PRE_TRANSFER,ATM_WITHDRAWAL            ".split(","))
-                .contains("POS_TRANSFER"));
+//        System.out.println(Arrays.asList("EC_TRANSFER,POS_TRANSFER,PRE_TRANSFER,ATM_WITHDRAWAL            ".split(","))
+//                .contains("POS_TRANSFER"));
         ;
         //        System.out.println(test().stream().reduce(BigDecimal.ZERO, BigDecimal::add));
         //        System.out.println(test().stream().reduce(BigDecimal.ZERO, BigDecimal::subtract));
@@ -40,10 +41,23 @@ public class TestMain {
         //        System.out.println(StringUtils.substring("123456", 2, 5));
         //
         //        testBool(null);
-        LocalDate startDate = LocalDate.parse("20230930", DateTimeFormatter.ofPattern("yyyyMMdd"));
-        for (int i = 1; i<=90; i++) {
-            System.out.println(startDate.plusDays(i).format(DateTimeFormatter.ofPattern("yyyyMMdd")));
-        }
+//        LocalDate startDate = LocalDate.parse("20230930", DateTimeFormatter.ofPattern("yyyyMMdd"));
+//        for (int i = 1; i<=90; i++) {
+//            System.out.println(startDate.plusDays(i).format(DateTimeFormatter.ofPattern("yyyyMMdd")));
+//        }
+    List<String> tmp=new ArrayList<>();
+        tmp.add("3142341");
+        tmp.add("34412744772559");
+        tmp.add("34412744772559");
+    
+    
+        tmp.forEach(record -> {
+            System.out.println(record);
+            if (StringUtils.equalsAny("34412744772559", record)) {
+                System.out.println("利息收入调账,运营手工补记,traceId:"+record);
+                throw new BusinessException("利息收入调账,运营手工补记,traceId: " + record);
+            }
+        });
         
     }
     
