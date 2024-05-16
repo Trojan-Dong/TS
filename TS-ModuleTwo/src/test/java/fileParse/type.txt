@@ -1,0 +1,154 @@
+{
+	"TOTAL": {
+		"TOTAL": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ACQUIRER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ISSUER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL OTHER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		}
+	},
+	"VISA CHARGES": {
+		"TOTAL": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ACQUIRER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ISSUER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL OTHER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		}
+	},
+	"INTERCHANGE": {
+		"TOTAL": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ACQUIRER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ISSUER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL OTHER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		}
+	},
+	"REIMBURSEMENT FEES": {
+		"TOTAL": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ACQUIRER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL ISSUER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		},
+		"TOTAL OTHER": {
+			"isDataRow": true,
+			"data": {
+				"COUNT": 50,
+				"CREDIT AMOUNT": 76,
+				"DEBIT AMOUNT": 102,
+				"TOTAL AMOUNT": 128
+			}
+		}
+	}
+}
